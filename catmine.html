@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<title>Cat Mines</title>
+</head>
+
+<body>
+
+<!--the cat gifs-->
+<div id="glitch1">
+<div id="catbox1" onMouseOver="nextPic1()" onClick="myPauseFunction()" align="center">
+	<img src="images/cat-1.gif" width="200" height="200" id="catShow1" onClick="boom()">
+	</div>
+    </div>
+
+<div id="glitch2">
+<div id="catbox2" onMouseOver="nextPic2()">
+	<img id ="catShow2" src="images/cat-5.gif" width="200" height="200" align="center"/>
+	</div>
+    </div>
+    
+<div id="glitch3">
+<div id="catbox3" onMouseOver="nextPic3()">
+	<img id="catShow3" src="images/cat-9.gif" width="200" height="200" align="center">
+	</div>
+    </div>
+
+<div align="center">
+<button id="pause" onClick="myPauseFunction()">Pause</button>
+<button id="play" onclick="myPlayFunction()">Play</button>
+<button id="WOWZA" onClick="randomize()">WOWZA</button>
+</div>
+
+<script src ="catstring.js"></script>
+</body>
+</html>

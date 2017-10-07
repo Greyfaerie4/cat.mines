@@ -1,0 +1,132 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#catbox1 {
+	width: 100%;
+	height: 200;
+	z-index: 1;
+	}
+
+#catbox2 {
+	width: 100%;
+	height: 200;
+	z-index: 1;
+	}
+
+#catbox3 {
+	width: 100%;
+	height: 200;
+	z-index: 1;
+	}
+	
+body {
+	background-image: url(images/rain-2.gif);
+	background-repeat:repeat;
+	}
+
+#glitch1 {
+	animation: glitch 1s infinite ease;
+	animation-play-state: running;
+	-webkit-animation: glitch 1s infinite ease;
+	-webkit-animation-play-state: running; 
+	}
+	
+#glitch1:hover {
+	animation: glitch2 0.5s infinite ease;
+	animation-play-state: running;
+	-webkit-animation: glitch2 1s infinite ease;
+	-webkit-animation-play-state: running; 
+	}
+	
+#glitch2 {
+	animation: glitch2 1s infinite ease;
+	animation-play-state: paused;
+	-webkit-animation: glitch2 1s infinite ease;
+	-webkit-animation-play-state: running; 
+	}
+
+#glitch2:hover {
+	animation: glitch 0.5s infinte ease;
+	animation-play-state: running;
+	-webkit-animation: glitch 1s infinite ease;
+	-webkit-animation-play-state: running; 
+	}
+	
+#glitch3 {
+	animation: glitch3 1s infinite ease;
+	animation-play-state: paused;
+	-webkit-animation: glitch3 1s infinite ease;
+	-webkit-animation-play-state: running; 
+	}
+
+#glitch3:hover {
+	animation: glitch3 1s infinte ease;
+	animation-play-state: running;
+	-webkit-animation: glitch3 1s infinite ease;
+	-webkit-animation-play-state: running; 
+	}
+
+button {
+	margin: 20px;
+	display: inline-block;
+	background-color: aqua;
+	z-index: 2;
+}
+
+/*ANIMATIONS*/
+@keyframes glitch {
+    0% {
+        transform: translate(0)}
+    20% {
+        transform: translate(-20px, -20px)}
+    40% {
+        transform: translate(-10px, -10px)}
+    60% {
+        transform: translate(20px, 20px)}
+    80% {
+        transform: translate(40px, 30px)}
+    100% {
+        transform: translate(0)}
+}
+
+@keyframes glitch2 {
+    0% {
+        transform: translate(0)
+    }
+    20% {
+        transform: translate(-200px, 5px)
+    }
+    40% {
+        transform: translate(-100px, -5px)
+    }
+    60% {
+        transform: translate(200px, 5px)
+    }
+    80% {
+        transform: translate(400px, -5px)
+    }
+    100% {
+        transform: translate(0)
+    }
+}
+
+@keyframes glitch3 {
+    0% {
+        transform: translate(0)
+    }
+    20% {
+        transform: translate(-20px, 100px)
+    }
+    40% {
+        transform: translate(-10px, 200px)
+    }
+    60% {
+        transform: translate(20px, -100px)
+    }
+    80% {
+        transform: translate(10px, -50px)
+    }
+    100% {
+        transform: translate(0)
+    }
+}
